@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projekt</title>
+    <meta charset="UTF-8" />
+    <script src="socket.io-1.4.5.js"></script>
+    <script src="three.js"></script>
+    <script src="Western_Normal.js"></script>
+    <script src="Intro.js"></script>
+    <script src="Ui.js"></script>
+    <script src="ElementSiatki.js"></script>
+    <script src="Klocek.js"></script>
+    <script src="Main.js"></script>
+
+    <script>
+
+    var main;
+    var intro;
+    var ui;
+    var klocek;
+    window.addEventListener("load", function () {
+        main = new Main();
+        intro = new Intro();
+        ui = new Ui();
+        element = new Element();
+        klocek = new Klocek();
+
+    })
+
+    </script>
+
+</head>
+<body>
+    <div id="showBricks" style="opacity:0;position:absolute;z-index:50;top:10px;right:10px;">AdminTool</div>
+    <div id="gameZone"></div>
+</body>
+</html>
